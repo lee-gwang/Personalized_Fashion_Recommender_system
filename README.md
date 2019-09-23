@@ -5,6 +5,7 @@
 ```
 
 ├── Fashion-Recommender-system
+    |
     ├── In-shop_Clothes_Retrieval_Benchmark
     │   ├── Anno
     |   └── Img
@@ -16,6 +17,16 @@
     ├── preprocessing
     |   └── gen_fashion_dataset.py
     |
-    └── AmazonFashion6ImgPartitioned.npy
-
+    ├── AmazonFashion6ImgPartitioned.npy
+    |
+    ├── img
+    |
+    ├── jupyter_notebook
+    |
+    ├── model
+    |
+    ├── preprocessing
+    |
+    └── README.md
+    
 ```
