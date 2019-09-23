@@ -6,12 +6,15 @@
 
 ├── Fashion-Recommender-system
     |
-    ├── In-shop_Clothes_Retrieval_Benchmark
-    │   ├── Anno
-    |   └── Img
-    |       ├── MEN
-    |       └── WOMEN
-    |
+    ├── dataset
+    |   ├── In-shop_Clothes_Retrieval_Benchmark
+    |   |   ├── Anno
+    |   |   └── Img
+    |   |       ├── MEN
+    |   |       └── WOMEN
+    |   |
+    |   └── reviews_Clothing_Shoes_and_Jewelry_5.json
+    |    
     ├── keras-yolo3-detection
     |
     ├── preprocessing
