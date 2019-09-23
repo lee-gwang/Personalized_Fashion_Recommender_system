@@ -1,5 +1,6 @@
 # Fashion-Recommender-system
 
+![ex_screenshot](./img/example.JPG)
 
 ```
 
