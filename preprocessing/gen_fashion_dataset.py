@@ -22,23 +22,23 @@ from keras.applications.resnet50 import ResNet50, preprocess_input
 # Load Dataset
 ##########################
 t1=time()
-dataset = np.load('../AmazonFashion6ImgPartitioned.npy',encoding='bytes',allow_pickle=True)
+dataset = np.load('../dataset/AmazonFashion6ImgPartitioned.npy',encoding='bytes',allow_pickle=True)
 train, val, test, meta, usernum, itemnum = dataset
 print('data load complete[%.2fs]'%(time()-t1))
 
 ##########################
 # Save Item images
 ##########################
-os.mkdir('../meta_img')
+os.mkdir('../dataset/meta_img')
 
 for idx in trange(len(meta)):
     try:
         c=io.BytesIO(meta[idx][b'imgs'])
         im=Image.open(c)
-        im.save('../meta_img/%s.jpg'%idx)
+        im.save('../dataset/meta_img/%s.jpg'%idx)
         
     except OSError: # png, but useless
-        os.remove(('../meta_img/%s.jpg'%idx))
+        os.remove(('../dataset/meta_img/%s.jpg'%idx))
         
 ##########################
 # Save image features
@@ -51,7 +51,7 @@ def feature_extractor():
     print('model load complete[%0.2fs]'%(time()-t1))
     
     # generate image batch
-    path = '../meta_img/*'
+    path = '../dataset/meta_img/*'
     file_list = glob.glob(path)
     file_list= [i for i in file_list if i.endswith('jpg')]
     
@@ -68,7 +68,7 @@ def feature_extractor():
 avg_pool_features = feature_extractor()
 
 
-file = '../amazonfashion6_imgfeature.hdf5'
+file = '../dataset/amazonfashion6_imgfeature.hdf5'
 
 with h5py.File(file, 'w') as f:
     f.create_dataset('imgs', (len(meta),2048,), dtype='float32')
@@ -80,13 +80,13 @@ with h5py.File(file, 'w') as f:
 ##########################################
 # Convert deepfashion type to keras-yolo3
 ##########################################
-df=pd.read_csv('../In-shop_Clothes_Retrieval_Benchmark/Anno/list_bbox_inshop.txt',header=None,sep='\s+',
+df=pd.read_csv('../dataset/In-shop_Clothes_Retrieval_Benchmark/Anno/list_bbox_inshop.txt',header=None,sep='\s+',
                names=['path','label','pose','x_1','y_1','x_2','y_2'])
 
 
 train=[]
 for index,f,class_id,pose,x_1,y_1,x_2,y_2 in df.itertuples():
-    train.append('../In-shop_Clothes_Retrieval_Benchmark/%s %s,%s,%s,%s,%s'%(f,x_1,y_1,x_2,y_2,int(class_id)+79))
+    train.append('../dataset/In-shop_Clothes_Retrieval_Benchmark/%s %s,%s,%s,%s,%s'%(f,x_1,y_1,x_2,y_2,int(class_id)+79))
 
 # Save train.txt
 f = open("../keras-yolo3-detection/train.txt", 'w')
