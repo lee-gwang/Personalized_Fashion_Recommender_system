@@ -12,8 +12,12 @@
     |   |   └── Img
     |   |       ├── MEN
     |   |       └── WOMEN
-    |   |
-    |   └── reviews_Clothing_Shoes_and_Jewelry_5.json
+    |   ├── amazon_clothing_explicit.json
+    |   ├── amazon_clothing_fast_implicit.json
+    |   ├── reviews_Clothing_Shoes_and_Jewelry_5.json
+    |   ├── amazonfashion6_imgfeature.hdf5
+    |   ├── AmazonFashion6ImgPartitioned.npy
+    |   └── pretrain
     |    
     ├── keras-yolo3-detection
     |
@@ -27,8 +31,16 @@
     ├── jupyter_notebook
     |
     ├── model
+    |   ├── similarity_model.py
+    |   ├── amazon_GMF.py
+    |   ├── amazon_MLP.py
+    |   ├── fast_evaluation.py
+    |   ├── popularity_evaluate.py
+    |   ├── random_evaluate.py
+    |   └── Image_based_MLP.py(comming soon)
     |
     ├── preprocessing
+    |   └── gen_fashion_dataset.py
     |
     └── README.md
     
