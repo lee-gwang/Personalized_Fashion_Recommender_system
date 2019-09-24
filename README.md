@@ -17,7 +17,7 @@ it is simiple recommender system.
 ## Model based Recommender System
 ![ex_screenshot](./img/example2.JPG)
 
-## Dadaset
+## Dataset
 ### Amazon Datasets Used for Model-based Rs
 - reviews_Clothing_Shoes_and_Jewelry_5.json.gz
 - 39387 Users, 23033 Items, 96.92% Sparsity
@@ -31,6 +31,10 @@ it is simiple recommender system.
 ### Amazon Datasets Used for Similarity-based Rs
 - AmazonFashion6ImgPartitioned.npy
 - Download from https://github.com/kang205/DVBPR
+
+### Deepfashion dataset
+- Data for training yolov3 model
+- Download from http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html 
 
 ## Example Usage
 
@@ -110,3 +114,9 @@ pip install -r requirements.txt
     
 ```
 
+## Reference
+- https://github.com/kang205/DVBPR
+- http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html
+- http://jmcauley.ucsd.edu/data/amazon/
+- https://github.com/hexiangnan/neural_collaborative_filtering
+- Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (2017). Neural Collaborative Filtering. In Proceedings of WWW '17, Perth, Australia, April 03-07, 2017.
