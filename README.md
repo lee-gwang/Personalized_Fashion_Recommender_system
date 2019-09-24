@@ -14,20 +14,25 @@ similar based rs는 옷을 detect하고 street fashion에서 구매한 원피스
 
 
 ## Similarity based Recommender system
-![ex_screenshot](./img/example.JPG)
 
-##
 ### Similarity Model Architecture
 ![ex_screenshot](./img/example3.jpg)
+##
+### Item Recommendation Example
+![ex_screenshot](./img/example.JPG)
 
 ## Model based Recommender System
-![ex_screenshot](./img/example2.JPG)
-##
+
 ### GMF and MLP Model Architecture
 ![ex_screenshot](./img/example5.JPG)
 ##
 ![ex_screenshot](./img/example4.jpg)
 comming soon
+##
+
+### Item Recommendation Example
+![ex_screenshot](./img/example2.JPG)
+
 
 ## Dataset
 
