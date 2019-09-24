@@ -95,3 +95,50 @@ for i in train:
     f.write(data)
 f.close()
     
+################
+# raw2dict json
+################
+import gzip
+import json
+
+def parse(path):
+    g = gzip.open(path, 'rb')
+    for l in g:
+        yield eval(l)
+        
+def getDF(path):
+    i = 0
+    df = {}
+    for d in parse(path):
+        df[i] = d
+        i += 1
+    return pd.DataFrame.from_dict(df, orient='index')
+
+df = getDF('../dataset/reviews_Clothing_Shoes_and_Jewelry_5.json.gz')
+
+# dict
+reviewerID_dict , asin_dict = {},{}
+
+for n,i in enumerate(df.reviewerID.unique()):
+    reviewerID_dict[i] = str(n)
+
+for n,i in enumerate(df.asin.unique()):
+    asin_dict[i] = str(n)
+    
+# one-hot
+df.reviewerID = df.reviewerID.apply(lambda x: reviewerID_dict[x])
+df.asin=df.asin.apply(lambda x : asin_dict[x])
+
+data={}
+user_dict, product_dict= {},{} # for user inner id to raw id
+
+for k,v in reviewerID_dict.items():
+    user_dict[v]=k
+for k,v in asin_dict.items():
+    product_dict[v]=k
+    
+data['user_dict'] = user_dict
+data['product_dict'] = product_dict
+
+with open('../dataset/amazon_raw2inner_dict.json', 'w', encoding="utf-8-sig") as make_file:
+    json.dump(data, make_file, ensure_ascii=False, indent="\t")
