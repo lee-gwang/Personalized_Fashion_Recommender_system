@@ -1,7 +1,7 @@
 # Fashion-Recommender-system
 
 ![ex_screenshot](./img/example.JPG)
-
+![ex_screenshot](./img/example2.JPG)
 ```
 
 ├── Fashion-Recommender-system
