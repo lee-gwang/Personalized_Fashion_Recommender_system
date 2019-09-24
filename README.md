@@ -1,6 +1,16 @@
 # Fashion-Recommender-system
 
+
+### Similarity based Recommender system
 ![ex_screenshot](./img/example.JPG)
+
+![ex_screenshot](./img/example3.jpg)
+
+
+
+
+
+### Model based Recommender System
 ![ex_screenshot](./img/example2.JPG)
 ```
 
