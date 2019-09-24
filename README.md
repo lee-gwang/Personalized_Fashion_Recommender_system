@@ -6,8 +6,9 @@ it is simiple recommender system.
 ## Similarity based Recommender system
 ![ex_screenshot](./img/example.JPG)
 
+----
 ### Similarity Model Architecture
-![ex_screenshot](./img/example4.jpg)
+![ex_screenshot](./img/example3.jpg)
 
 
 
