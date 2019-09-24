@@ -123,7 +123,7 @@ if __name__ == '__main__':
     
     model = get_model(usernum, itemnum, num_factors, regs)
     model.load_weights(gmf_pretrain)
-    print("Load pretrained cosmetic_gmf (%s) models done. " %(gmf_pretrain))
+    print("Load pretrained gmf (%s) models done. " %(gmf_pretrain))
 
     
     print('\t')
