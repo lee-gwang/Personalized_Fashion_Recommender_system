@@ -32,13 +32,8 @@
     |
     ├── model
     |   ├── similarity_model.py
-    |   ├── amazon_GMF.py
-    |   ├── amazon_MLP.py
-    |   ├── fast_evaluation.py
-    |   ├── popularity_evaluate.py
-    |   ├── random_evaluate.py
-    |   ├── gmf_inference.py
-    |   ├── mlp_inference.py
+    |   ├── ...
+    |   ├── ...
     |   └── Image_based_MLP.py(comming soon)
     |
     ├── preprocessing
