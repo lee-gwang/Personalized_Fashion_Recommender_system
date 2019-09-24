@@ -20,42 +20,32 @@ similar based rs는 옷을 detect하고 street fashion에서 구매한 원피스
 ### Similarity Model Architecture
 ![ex_screenshot](./img/example3.jpg)
 
-
-
-
-
 ## Model based Recommender System
 ![ex_screenshot](./img/example2.JPG)
 ##
 ### GMF and MLP Model Architecture
 ![ex_screenshot](./img/example5.JPG)
 ##
-
-
-
-
-
 ![ex_screenshot](./img/example4.jpg)
 comming soon
 
-
-
-
-
 ## Dataset
-#### Amazon Datasets Used for Model-based Rs
+
+#### Amazon Datasets-1
+- Data for Similarity-based Rs
+- AmazonFashion6ImgPartitioned.npy
+- Download from https://github.com/kang205/DVBPR
+
+#### Amazon Datasets-2 
+- Data for Model-based Rs
 - reviews_Clothing_Shoes_and_Jewelry_5.json.gz
 - 39387 Users, 23033 Items, 96.92% Sparsity
 - Users who rated at least 5 items
 - Download from http://jmcauley.ucsd.edu/data/amazon/
 
-#### Amazon Metadatasets
+#### Amazon Datasets-3
 - meta_Clothing_Shoes_and_Jewelry.json.gz
 - Download from http://jmcauley.ucsd.edu/data/amazon/
-
-#### Amazon Datasets Used for Similarity-based Rs
-- AmazonFashion6ImgPartitioned.npy
-- Download from https://github.com/kang205/DVBPR
 
 #### Deepfashion dataset
 - Data for training yolov3 model
