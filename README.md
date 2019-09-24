@@ -42,7 +42,18 @@ it is simiple recommender system.
 ```
 python gem_fashion_dataset.py
 ```
-#### Learn Model(you should tuning hyperparameter)
+#### Train yolov3, Run Similarity based model
+
+```
+cd keras-yolo3-detection
+python train.py
+```
+```
+cd model
+python similarity_model.py
+```
+
+#### Train Model based Rs(you should tuning hyperparameter)
 ```
 python amazon_MLP.py
 python amazon_GMF.py
@@ -119,4 +130,5 @@ pip install -r requirements.txt
 - http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html
 - http://jmcauley.ucsd.edu/data/amazon/
 - https://github.com/hexiangnan/neural_collaborative_filtering
-- Xiangnan He, Lizi Liao, Hanwang Zhang, Liqiang Nie, Xia Hu and Tat-Seng Chua (2017). Neural Collaborative Filtering. In Proceedings of WWW '17, Perth, Australia, April 03-07, 2017.
+- Neural Collaborative Filtering. Xiangnan He. In Proceedings of WWW '17, Perth, Australia, April 03-07
+- Image-based recommendations on styles and substitutes. Julian McAuley. SIGIR
