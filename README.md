@@ -18,21 +18,21 @@ it is simiple recommender system.
 ![ex_screenshot](./img/example2.JPG)
 
 ## Dataset
-### Amazon Datasets Used for Model-based Rs
+#### Amazon Datasets Used for Model-based Rs
 - reviews_Clothing_Shoes_and_Jewelry_5.json.gz
 - 39387 Users, 23033 Items, 96.92% Sparsity
 - Users who rated at least 5 items
 - Download from http://jmcauley.ucsd.edu/data/amazon/
 
-### Amazon Metadatasets
+#### Amazon Metadatasets
 - meta_Clothing_Shoes_and_Jewelry.json.gz
 - Download from http://jmcauley.ucsd.edu/data/amazon/
 
-### Amazon Datasets Used for Similarity-based Rs
+#### Amazon Datasets Used for Similarity-based Rs
 - AmazonFashion6ImgPartitioned.npy
 - Download from https://github.com/kang205/DVBPR
 
-### Deepfashion dataset
+#### Deepfashion dataset
 - Data for training yolov3 model
 - Download from http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html 
 
