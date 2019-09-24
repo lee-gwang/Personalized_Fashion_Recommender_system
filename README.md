@@ -30,7 +30,17 @@ similar based rs는 옷을 detect하고 street fashion에서 구매한 원피스
 ### GMF and MLP Model Architecture
 ![ex_screenshot](./img/example5.JPG)
 ##
+
+
+
+
+
 ![ex_screenshot](./img/example4.jpg)
+comming soon
+
+
+
+
 
 ## Dataset
 #### Amazon Datasets Used for Model-based Rs
