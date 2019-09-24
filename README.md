@@ -60,6 +60,7 @@ comming soon
 
 #### Generate data
 ```
+cd preprocessing
 python gem_fashion_dataset.py
 ```
 #### Train yolov3, Run Similarity based model
@@ -75,11 +76,13 @@ python similarity_model.py
 
 #### Train Model based Rs(you should tuning hyperparameter)
 ```
+cd model
 python amazon_MLP.py
 python amazon_GMF.py
 ```
 #### Recommendation Items for Users
 ```
+cd model
 python mlp_inference.py
 python gmf_inference.py
 ```
