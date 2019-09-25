@@ -8,8 +8,7 @@ Will users be happy if they recommended a similar style of clothing? Few people 
 Will users be happy if they recommend items using the 'knn' model? Because the users are all different, the model may not work well.  
 Will users be satisfied if they recommends items by creating a preference-based model that considers the image of the product? It will solve the cold start problem, but it does less to help the user discover different types of items that he might like as much  
   
-Through the defined evaluation method, it is possible to predict that the user will be satisfied, but it is not known whether the user is actually satisfied. It is very difficult to create a model to satisfy human emotions.  
-However, this project will satisfy users by recommending items using various reasonable models.
+Through the defined evaluation method, it is possible to predict that the user will be satisfied, but it is not known whether the user is actually satisfied. It is very difficult to create a model to satisfy human emotions. However, this project will satisfy users by recommending items using various reasonable models.
 
 
 
