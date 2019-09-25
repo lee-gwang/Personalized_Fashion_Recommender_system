@@ -1,16 +1,16 @@
-# Fashion-Recommender-system
-This project is fashion recommender system
-it is simiple recommender system
-오늘날 새로운 옷들이 쏟아진다(fast fashion 언급), 자라언급
-사용자는 수많은 원피스중에 원하는 원피스를 찾기위해 끊임없이 여러 쇼핑몰을 드나든다
-이건 너무나 시간낭비!
-추천시스템은 사용자의 선호도를 파악하여 원하는 옷을 추천해줄 수 있다.
-similar based rs는 street fashion 사진에서 하의,상의, fullbody 를 detect하고 비슷한 스타일의 상품을 찾아줄 수 있다.
-대부분의 사람들은 이러한 유사한 상품을 찾아주는 rs가 최선이라 생각하지만 아니다.
-어느 누가 자신이 구매한 원피스와 비슷한 스타일의 원피스를 또 구매할거란 건가?
-similar based rs는 옷을 detect하고 street fashion에서 구매한 원피스와 어울리는 style을 찾을 수 있다.
-이 프로젝트는 feed back 기반의 추천시스템 모델과 단순한 similarity based Rs를 만들었으며
-향후에 이사람이 구매한 상품과 어룰리는 다른 상품을 추천하기 위한 추천시스템을 구현할 것이다.
+# Personalized Fashion Recommender system
+
+Fast fashion is a contemporary term used by fashion retailers to express that designs move from catwalk quickly to capture current fashion trends. As a result, a lot of new clohtes are released every day. We look at the monitor all day long to find a favorite among these numerous clothes. It's really time-consuming!! Recommener system solves this challenge. Recommender system provide users with perosnalized recommendation for clothes, which consider their preference and need.
+  
+But if you look more closely, there are many more things to consider. As fashion trends change rapidly, people's preferences for clothes change as well. There is also a need to consider seasonality. For example, when winter starts, problems arise because you need to use data from the previous winter to recommend clothes to users. Finally, aesthetics, social consciousness and context must also be considered. Imagine you are wearing red tops, bottoms and shoes, which is really terrible!! And imagine wearing short sleeves, shorts and slippers as a wedding guest dress. This is also terrible.
+  
+Will users be happy if they recommended a similar style of clothing? Few people buy clothes of similar style or similar color or similar pattern that they have already purchased.  
+Will users be happy if they recommend items using the 'knn' model? Because the users are all different, the model may not work well.  
+Will users be satisfied if they recommends items by creating a preference-based model that considers the image of the product? It will solve the cold start problem, but it does less to help the user discover different types of items that he might like as much  
+  
+Through the defined evaluation method, it is possible to predict that the user will be satisfied, but it is not known whether the user is actually satisfied. It is very difficult to create a model to satisfy human emotions.  
+However, this project will satisfy users by recommending items using various reasonable models.
+
 
 
 ## Similarity based Recommender system
@@ -149,9 +149,13 @@ pip install -r requirements.txt
 ```
 
 ## Reference
+- https://dressipi.com/blog/building-fashion-recommendation-systems/
 - https://github.com/kang205/DVBPR
 - http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html
 - http://jmcauley.ucsd.edu/data/amazon/
 - https://github.com/hexiangnan/neural_collaborative_filtering
-- Neural Collaborative Filtering. Xiangnan He. In Proceedings of WWW '17, Perth, Australia, April 03-07
-- Image-based recommendations on styles and substitutes. Julian McAuley. SIGIR
+- Hines, Tony, and M. Bruce. 2001. Fashion marketing - Contemporary issues. Oxford: Butterworth-Heinemann.
+- Xiangnan He. Neural Collaborative Filtering. In Proceedings of WWW '17, Perth, Australia, April 03-07
+- Julian McAuley. Image-based recommendations on styles and substitutes. SIGIR
+- Wang-Cheng Kang. Visually-Aware Fashion Recommendation and Design with Generative Image Models. ICDM'17
+- Yifan Hu. Collaborative Filtering for Implicit Feedback Datasets.
