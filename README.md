@@ -150,6 +150,7 @@ pip install -r requirements.txt
 ```
 
 ## Reference
+- https://en.wikipedia.org/wiki/Fast_fashion 
 - https://dressipi.com/blog/building-fashion-recommendation-systems/
 - https://github.com/kang205/DVBPR
 - http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html
