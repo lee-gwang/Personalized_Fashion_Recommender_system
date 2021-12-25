@@ -40,6 +40,7 @@ comming soon
 #### Amazon Datasets-1
 - Data for Similarity-based Rs
 - AmazonFashion6ImgPartitioned.npy
+-https://cseweb.ucsd.edu//~wckang/DVBPR/AmazonFashion6ImgPartitioned.npy click and get 
 - Download from https://github.com/kang205/DVBPR
 
 #### Amazon Datasets-2 
